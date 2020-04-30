@@ -6,5 +6,15 @@
     </head>
     <body>
         <h1>Olá minha primeira view do Flask</h1>
+        <p>{{ tittle }}</p>
+        <p>{{ outra }}</p>
+        <ul>
+        {% for elemento in lista %}
+            <li>Item {{ loop.index }}: {{ elemento }}</li>
+        {% else %}
+            <li>Lista vazia</li>
+        {% endfor %}
+
+        </ul>
     </body>
 </html>

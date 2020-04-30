@@ -9,7 +9,9 @@ def ola():
 
 @app.route('/')
 def pagina_principal():
-    return render_template('index.html')
+    retorno = render_template('index.html', tittle='Pagina Flask', 
+    outra='New', lista = ['a', 'b', 'c'])
+    return retorno
 
 
 @app.route('/outra')
